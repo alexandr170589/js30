@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'Forum';
+    src: url("../assets/fonts/Forum-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: block;
+    background-image: url('../assets/img/fon_.png');
+    background-size: auto;
+    margin: 0;    
+    padding: 0;   
+    height: 100%;
+    max-width:  1440px;
+}
+
+.wrapper {
+    position: absolute;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;    
+    background: #FFF;    
+    z-index: 10;   
+}
+
+.container {
+    position: absolute;
+    height: 500px;
+    width: 280px;
+    margin: auto;
+    padding: 0 10px 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+    z-index: 100;     
+}
+
+.footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF; 
+    margin: 0;    
+    padding: 0;   
+    height: 40px;
+    width: 280px;
+    left: 0;
+    bottom: 0;
+}
+
+.footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.href_rs {
+    margin-top: 12px;
+}
+
+.footer img {   
+    width: 60px;
+}
+
+.container-img {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    background-image: url('../assets/img/lesnik.jpg');
+    background-size: cover;
+}
+
+.container-control {
+    position: absolute;
+    width: 300px;
+    height: 170px;
+    top: 300px;
+    background: radial-gradient(circle, #A9A9A9, #696969);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-title {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    height: 40px;
+    top: 10px;
+    color: #FFF;
+    font-family: Forum;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+}
+
+.autor {
+    color: #82CFD0;
+}
+
+.wrapper-buttons {
+    position: absolute;
+    width: 280px;
+    height: 40px;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+
+.wrap-vol {
+    width: 280px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.wrapper-range {
+    position: absolute;
+    width: 280px;
+    height: 90px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-footer {
+    position: absolute;
+    width: 280px;
+    height: 40px;
+    bottom: 0;
+    background-color: #FFF;
+    font-family: Forum;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.6px;
+}
+
+.second-song {
+    background-image: url('../assets/img/rassvet.jpg');
+}
+
+.vol_act {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    background-image: url('../assets/svg/vol_act.png');
+    background-size: cover;
+}
+
+.vol_deact {
+    background-image: url('../assets/svg/vol_deact.png');
+}
+
+.play {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-image: url('../assets/svg/play.png');
+    background-size: cover;
+}
+
+.pause {  
+    background-image: url('../assets/svg/pause.png');
+}
+
+.prev {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-image: url('../assets/svg/backward.png');
+    background-size: cover;
+}
+
+.next {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-image: url('../assets/svg/forward.png');
+    background-size: cover;
+}
+
+.play:hover {
+    background-image: url('../assets/svg/play_hover.png');
+    cursor: pointer;
+}
+
+.pause:hover {  
+    background-image: url('../assets/svg/pause_hover.png');
+    cursor: pointer;
+}
+
+.next:hover {
+    background-image: url('../assets/svg/forward_hover.png');
+    cursor: pointer;
+}
+
+.prev:hover {
+    background-image: url('../assets/svg/backward_hover.png');
+    cursor: pointer;
+}
+
+.vol_act:hover {
+    cursor: pointer;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    margin: 0 auto 6px;
+}
+
+.progress-bar {
+    position: relative;
+    width: 70%;
+    height: 5px;
+    background-color: #EEE;
+    vertical-align: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.now {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 5px;
+    width: 0%;
+    background: #82CFD0;
+}
+
+.now::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    width: 5px;
+    height: 14px;
+    top: -4px;
+    background: #434343;
+    border-radius: 20%;
+}
+
+.progress_1 {
+    background: linear-gradient(to right, #82CFD0 0%, #82CFD0 50%, #fff 50%, #fff 100%);
+    border-radius: 8px;
+    height: 3px;
+    width: 80px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.progress_1::-webkit-slider-thumb {
+    width: 5px;
+    height: 14px;
+    border-radius: 20%;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: #434343;
+}
