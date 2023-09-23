@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Forum';
     src: url("../assets/fonts/Forum-Regular.ttf");
@@ -237,7 +236,6 @@ body {
 .vol_act:hover {
     cursor: pointer;
 }
-
 
 .progress {
     display: flex;
